@@ -1,0 +1,20 @@
+<div class="alert alert-success" role="alert">
+  <!-- {{}} = angular expression ou double mustache. 
+    Principal forma de comunicação entra o controller e template -->
+  Bem-vindo {{ name }}, a página inicial!
+  <!-- exemplo do uso do ngModel (lembrar de importar no app.module.ts o FormsModule) -->
+  <input [type]="type" [(ngModel)]="idade" /> 
+  <br />
+  {{ idade }} <!-- Observe que o resultado é automaticamente atualizado -->
+</div>
+
+<!-- exemplo de uso do evento de click -->
+<button class="btn btn-info" (click)="adicionaMais()">+</button>
+
+
+<!-- Exercicio do slide 24 -->
+<div class="alert alert-success" role="alert">
+  <button class="btn btn-danger" (click)="subtrair()">-</button>
+  Valor {{ contador }}
+  <button class="btn btn-success" (click)="somar()">+</button>
+</div>
