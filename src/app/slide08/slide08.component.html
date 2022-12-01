@@ -1,0 +1,14 @@
+<div class="container">
+  <input type="text" [(ngModel)]="name">
+  <br />
+  <!-- Para testar qual caso do @output mova ou a linha 04 ou a 05 para tag de button -->
+  <!-- Caso 1 - (click)="actionOutput.emit()"-->
+  <!-- Caso 2 - (click)="actionOutput.emit({nome: name})" -->
+  <button
+    (click)="actionOutput.emit()"
+    [type]="type"
+    class="btn {{ color }}"
+  >
+    {{ text }}
+  </button>
+</div>

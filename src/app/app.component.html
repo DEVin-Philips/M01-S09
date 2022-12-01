@@ -1,5 +1,13 @@
 <app-navbar></app-navbar>
+<!-- Descomente para ver os diferentes componentes que é possível com uma simples troca -->
+<!-- <app-home></app-home> -->
 
-<!-- descomente para ver os diferentes componentes que é possível com uma simples troca -->
-<app-home></app-home>
-<!-- <app-features></app-features> -->
+<!-- Exercício do slide 06 -->
+<app-features idAccordion="accordion1" [titleAccordion]="title" [descriptionAccordion]="description"></app-features>
+<app-features idAccordion="accordion2" titleAccordion="Título 02" [descriptionAccordion]="description"></app-features>
+
+<!-- Exercício do slide 08 -->
+<!-- Caso 1 do uso do @Output - como passagem de funções -->
+<app-button (actionOutput)="cancelar()" color="bg-danger" type="reset" text="Cancelar"></app-button>
+<!-- Caso 2 do uso do @Output - para retornar algo do componente filho para o pai -->
+<app-button (actionOutput)="enviar($event)" color="bg-warning" type="submit" text="Salvar"></app-button>

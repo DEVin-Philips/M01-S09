@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { FeaturesComponent } from './features/features.component';
 import { FormsModule } from '@angular/forms';
+import { Slide08Component } from './slide08/slide08.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     HomeComponent,
     FeaturesComponent,
+    Slide08Component,
   ],
   imports: [
     BrowserModule,
