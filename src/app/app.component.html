@@ -2,12 +2,16 @@
 <!-- Descomente para ver os diferentes componentes que é possível com uma simples troca -->
 <!-- <app-home></app-home> -->
 
-<!-- Exercício do slide 06 -->
-<app-features idAccordion="accordion1" [titleAccordion]="title" [descriptionAccordion]="description"></app-features>
-<app-features idAccordion="accordion2" titleAccordion="Título 02" [descriptionAccordion]="description"></app-features>
+<!-- Exercício do slide 06 (aula 03)-->
+<!-- <app-accordion idAccordion="accordion1" [titleAccordion]="title" [descriptionAccordion]="description"></app-accordion>
+<app-accordion idAccordion="accordion2" titleAccordion="Título 02" [descriptionAccordion]="description"></app-accordion> -->
 
-<!-- Exercício do slide 08 -->
+<!-- Exercício do slide 08 (aula 03)-->
 <!-- Caso 1 do uso do @Output - como passagem de funções -->
-<app-button (actionOutput)="cancelar()" color="bg-danger" type="reset" text="Cancelar"></app-button>
+<!-- <app-button (actionOutput)="cancelar()" color="bg-danger" type="reset" text="Cancelar"></app-button> -->
 <!-- Caso 2 do uso do @Output - para retornar algo do componente filho para o pai -->
-<app-button (actionOutput)="enviar($event)" color="bg-warning" type="submit" text="Salvar"></app-button>
+<!-- <app-button (actionOutput)="enviar($event)" color="bg-warning" type="submit" text="Salvar"></app-button> -->
+
+
+<!-- Exercício do slide 13 (aula 03) -->
+<app-accordion [titleAccordion]="title" [descriptionAccordion]="description"></app-accordion>

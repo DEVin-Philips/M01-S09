@@ -11,8 +11,8 @@ export class Slide08Component implements OnInit {
   @Input() text: string = '';
   //a declaração actionOutput pode ser modificada, ela só indica o nome da variável
   @Output() actionOutput: EventEmitter<any> = new EventEmitter();
+  retorno = 'O título do botão é '+this.text+' onde seu tipo é '+this.type+' com a classe de cor de fundo '+ this.color;
   
-  name: string = "";
   constructor() {}
 
   ngOnInit(): void {}

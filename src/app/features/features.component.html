@@ -21,6 +21,9 @@
       >
         <div class="accordion-body">
           {{ descriptionAccordion }}
+          <br/>
+          <!-- Incluído no exercício do slide 13 (aula 03) -->
+          <app-button text="Enviar" color="bg-success" type="submit" (actionOutput)="mostraInfo($event)"></app-button>
         </div>
       </div>
     </div>
