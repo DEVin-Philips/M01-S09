@@ -2,10 +2,10 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button',
-  templateUrl: './slide08.component.html',
-  styleUrls: ['./slide08.component.css'],
+  templateUrl: './button.component.html',
+  styleUrls: ['./button.component.css'],
 })
-export class Slide08Component implements OnInit {
+export class ButtonComponent implements OnInit {
   @Input() type: string = '';
   @Input() color: string = '';
   @Input() text: string = '';

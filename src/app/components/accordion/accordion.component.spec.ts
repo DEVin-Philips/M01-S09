@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Slide08Component } from './slide08.component';
+import { AccordionComponent } from './accordion.component';
 
-describe('Slide08Component', () => {
-  let component: Slide08Component;
-  let fixture: ComponentFixture<Slide08Component>;
+describe('AccordionComponent', () => {
+  let component: AccordionComponent;
+  let fixture: ComponentFixture<AccordionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Slide08Component ]
+      declarations: [ AccordionComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Slide08Component);
+    fixture = TestBed.createComponent(AccordionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

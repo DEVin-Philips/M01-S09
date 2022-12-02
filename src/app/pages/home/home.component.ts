@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { GeneralService } from 'src/app/services/general.service';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +12,8 @@ export class HomeComponent implements OnInit {
   idade: number = 0;
   type: string = "text";
   
-  constructor() { }
+  constructor(public generalService: GeneralService) {
+  }
   ngOnInit(): void {}
   
   adicionaMais(){

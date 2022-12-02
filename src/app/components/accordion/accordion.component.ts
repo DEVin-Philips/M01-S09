@@ -1,25 +1,35 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { GeneralService } from 'src/app/services/general.service';
 
 @Component({
   selector: 'app-accordion',
-  templateUrl: './features.component.html',
-  styleUrls: ['./features.component.css']
+  templateUrl: './accordion.component.html',
+  styleUrls: ['./accordion.component.css']
 })
-export class FeaturesComponent implements OnInit {
+export class AccordionComponent implements OnInit {
+
   // Exercício do slide 06
   @Input() titleAccordion: string = "";
   @Input() descriptionAccordion: string = "";
   // Extra
   @Input() idAccordion: any = "accordion1";
+  variavel2: any;
 
-  constructor() { }
+  constructor(private generalService: GeneralService) {
+    
+  }
 
   ngOnInit(): void {
+    console.log(this.generalService.somar(2,4));
   }
 
   // Incluído no exercício do slide 13 (aula 03)
   mostraInfo(event:any){
     console.log(event)
+  }
+
+  ngOnDestroy(){
+    
   }
 
 }
