@@ -15,21 +15,13 @@ export class AccordionComponent implements OnInit {
   @Input() idAccordion: any = "accordion1";
   variavel2: any;
 
-  constructor(private generalService: GeneralService) {
-    
-  }
+  constructor() {}
 
   ngOnInit(): void {
-    // console.log(this.generalService.somar(2,4));
   }
 
   // Incluído no exercício do slide 13 (aula 03)
   mostraInfo(event:any){
     console.log(event)
   }
-
-  ngOnDestroy(){
-    
-  }
-
 }
