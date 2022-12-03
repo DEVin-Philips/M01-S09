@@ -1,0 +1,32 @@
+<p>aula-revisao works!</p>
+
+<input type="number" class="form-control" [(ngModel)]="number1" />
+<br />
+<input type="number" class="form-control" [(ngModel)]="number2" />
+
+<button
+  class="btn btn-info"
+  (click)="resultado = calcService.somar(number1, number2)"
+>
+  +
+</button>
+<button
+  class="btn btn-warning"
+  (click)="resultado = calcService.subtrair(number1, number2)"
+>
+  -
+</button>
+<button
+  class="btn btn-danger"
+  (click)="resultado = calcService.dividir(number1, number2)"
+>
+  /
+</button>
+<button
+  class="btn btn-success"
+  (click)="resultado = calcService.multiplicar(number1, number2)"
+>
+  *
+</button>
+
+<h3>{{ resultado }}</h3>

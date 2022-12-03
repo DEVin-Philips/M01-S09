@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { ButtonComponent } from './components/button/button.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AccordionComponent } from './components/accordion/accordion.component';
+import { AulaRevisaoComponent } from './pages/aula-revisao/aula-revisao.component';
 
 
 
@@ -20,7 +21,8 @@ import { AccordionComponent } from './components/accordion/accordion.component';
     HomeComponent,
     FeaturesComponent,
     ButtonComponent,
-    AccordionComponent
+    AccordionComponent,
+    AulaRevisaoComponent
   ],
   imports: [
     BrowserModule,

@@ -7,8 +7,6 @@ export class GeneralService {
 
   constructor() { }
 
-  somar(numero1:number, numero2:number){
-    return numero1 + numero2;
-  }
+  
   
 }

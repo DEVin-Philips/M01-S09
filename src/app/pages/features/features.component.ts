@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CalculadoraService } from 'src/app/services/calculadora.service';
 import { GeneralService } from 'src/app/services/general.service';
 
 @Component({
@@ -15,11 +16,11 @@ export class FeaturesComponent implements OnInit {
     repellat voluptas ea modi debitis!`;
 
   //Injeção de dependencia feita sempre no constructor do componente
-  constructor(private generalService: GeneralService) {}
+  constructor(public generalService: GeneralService, private calcService: CalculadoraService) {}
 
   ngOnInit(): void {
     //Apenas com a injeção de dependencia será possível utilizar o métodos somar
-    console.log(this.generalService.somar(2,4));
+    console.log(this.calcService.somar(2,4));
   }
 
   // Incluído no exercício do slide 13 (aula 03)

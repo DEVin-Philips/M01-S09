@@ -20,7 +20,7 @@ export class AccordionComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.generalService.somar(2,4));
+    // console.log(this.generalService.somar(2,4));
   }
 
   // Incluído no exercício do slide 13 (aula 03)
